@@ -5,6 +5,12 @@
   "license": "MIT",
   "scripts": {
     "run:test": "node --require ./setup-global ./src/simple.test",
-    "run:test:jest": "npx jest"
+    "run:test:jest": "npx jest",
+    "build": "babel src --out-dir dist"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.0",
+    "@babel/core": "^7.17.2",
+    "@babel/preset-env": "^7.16.11"
   }
 }
