@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "run:test": "node --require ./setup-global ./src/simple"
+    "run:test": "node --require ./setup-global ./src/simple.test",
+    "run:test:jest": "npx jest"
   }
 }
