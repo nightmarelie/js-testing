@@ -4,6 +4,6 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "run:test": "node ./src/simple"
+    "run:test": "node --require ./setup-global ./src/simple"
   }
 }
