@@ -8,12 +8,16 @@
     "run:test:jest": "npx jest",
     "build": "babel src --out-dir dist",
     "lint": "eslint --ignore-path .gitignore .",
-    "lint:fix": "yarn lint --fix"
+    "lint:fix": "yarn lint --fix",
+    "format": "prettier --ignore-path .gitignore \"**/*.+(js|json)\"",
+    "format:fix": "yarn format --write"
   },
   "devDependencies": {
     "@babel/cli": "^7.17.0",
     "@babel/core": "^7.17.2",
     "@babel/preset-env": "^7.16.11",
-    "eslint": "^8.8.0"
+    "eslint": "^8.8.0",
+    "eslint-config-prettier": "^8.3.0",
+    "prettier": "^2.5.1"
   }
 }

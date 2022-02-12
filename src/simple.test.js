@@ -6,14 +6,14 @@ const sumAsync = (a, b) =>
 const subtractAsync = (a, b) =>
   new Promise((resolve) => setTimeout(() => resolve(subtract(a, b)), 0));
 
-test("sum adds numbers", async () => {
+test('sum adds numbers', async () => {
   const result = await sumAsync(3, 7);
   const expected = 10;
 
   expect(result).toBe(expected);
 });
 
-test("subtract subtracts numbers", async () => {
+test('subtract subtracts numbers', async () => {
   const result = await subtractAsync(5, 2);
   const expected = 3;
 
