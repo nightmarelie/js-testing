@@ -37,7 +37,7 @@
     "*.{js,ts,tsx}": [
       "yarn lint:fix"
     ],
-    "**/*.{ts,tsx,md,json}": [
+    "*.{ts,tsx,md,json}": [
       "yarn format:fix"
     ]
   }
