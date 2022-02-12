@@ -32,7 +32,7 @@
   "dependencies": {},
   "husky": {
     "hooks": {
-      "pre-commit": "echo 'RUNNING HOOK!'"
+      "pre-commit": "yarn validate"
     }
   }
 }
