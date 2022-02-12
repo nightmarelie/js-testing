@@ -1,9 +1,9 @@
-const sum = (a, b) => a + b;
-const subtract = (a, b) => a - b;
+const sum = (a: number, b: number) => a + b;
+const subtract = (a: number, b: number) => a - b;
 
-const sumAsync = (a, b) =>
+const sumAsync = (a: number, b: number) =>
   new Promise((resolve) => setTimeout(() => resolve(sum(a, b)), 0));
-const subtractAsync = (a, b) =>
+const subtractAsync = (a: number, b: number) =>
   new Promise((resolve) => setTimeout(() => resolve(subtract(a, b)), 0));
 
 test('sum adds numbers', async () => {

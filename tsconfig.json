@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "noEmit": true,
+    "lib": ["es7", "dom"],
+    "types": ["jest", "@types/jest"]
+  }
+}
