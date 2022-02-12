@@ -29,5 +29,10 @@
     "prettier": "^2.5.1",
     "typescript": "^4.5.5"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "echo 'RUNNING HOOK!'"
+    }
+  }
 }
