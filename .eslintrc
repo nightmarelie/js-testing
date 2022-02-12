@@ -1,0 +1,24 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 2022,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "extends": ["eslint:recommended"],
+  "rules": {
+    "strict": ["error", "never"],
+    "valid-typeof": "error",
+    "no-unsafe-negation": "error",
+    "no-unused-vars": "error",
+    "no-unexpected-multiline": "error",
+    "no-undef": "error"
+  },
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true,
+    "node": true
+  }
+}

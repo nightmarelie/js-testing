@@ -1,9 +1,8 @@
-"use strict";
-
 const username = "john";
 typeof username === "string";
 
-if (!"serviceWorker" in (navigator || {})) {
+if (!("serviceWorker" in navigator)) {
+  console.log("you need to use another browser");
 }
 
 const greeting = "hello";

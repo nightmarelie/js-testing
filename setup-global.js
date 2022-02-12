@@ -15,8 +15,16 @@ function expect(actual) {
         throw new Error(`${actual} is not equal to ${expected}`);
       }
     },
-    toEqual(expected) {},
-    toBeGreaterThan(expected) {},
+    toEqual(expected) {
+      if (actual === expected) {
+        throw new Error(`${actual} is not equal to ${expected}`);
+      }
+    },
+    toBeGreaterThan(expected) {
+      if (actual > expected) {
+        throw new Error(`${actual} is not greater than ${expected}`);
+      }
+    },
   };
 }
 
