@@ -15,7 +15,8 @@
     "type:check": "tsc",
     "validate": "npm-run-all --parallel type:check format:check lint build",
     "prepare": "husky install",
-    "pre-commit": "yarn type:check && lint-staged && yarn build"
+    "pre-commit": "yarn type:check && lint-staged && yarn build",
+    "run:thumb-war": "node ./src/thumb-war"
   },
   "devDependencies": {
     "@babel/cli": "^7.17.0",
