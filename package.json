@@ -16,7 +16,8 @@
     "validate": "npm-run-all --parallel type:check format:check lint build",
     "prepare": "husky install",
     "pre-commit": "yarn type:check && lint-staged && yarn build",
-    "run:thumb-war": "node ./src/thumb-war"
+    "run:thumb-war": "node ./src/thumb-war",
+    "jest": "jest"
   },
   "devDependencies": {
     "@babel/cli": "^7.17.0",
@@ -26,9 +27,12 @@
     "@types/jest": "^27.4.0",
     "@typescript-eslint/eslint-plugin": "^5.11.0",
     "@typescript-eslint/parser": "^5.11.0",
+    "create-jest-runner": "^0.9.0",
     "eslint": "^8.8.0",
     "eslint-config-prettier": "^8.3.0",
     "husky": "^7.0.0",
+    "jest": "^27.5.1",
+    "jest-worker": "^27.5.1",
     "lint-staged": "^12.3.3",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.5.1",

@@ -7,4 +7,4 @@ function getWinner(player1, player2) {
     : null;
 }
 
-module.export = getWinner;
+module.exports = getWinner;
